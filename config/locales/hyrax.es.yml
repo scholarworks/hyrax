@@ -91,6 +91,7 @@ es:
             varies:             "Varía -- por defecto es público, pero los depositantes pueden restringir la visibilidad de las obras individuales"
         form_workflow: # TODO: verify text; added via google translate
           page_description:     "Cada conjunto administrativo tiene un flujo de trabajo asociado con él. Este flujo de trabajo se aplica a todos los trabajos agregados al conjunto administrativo. Seleccione el flujo de trabajo que se utilizará para este conjunto de administración a continuación."
+          no_workflows:   "No hay flujos de trabajo que seleccionar."
           cancel:         "Cancelar"
         new:
           header:         "Crear nuevo conjunto Administrativo"
