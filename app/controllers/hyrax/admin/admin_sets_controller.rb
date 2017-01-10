@@ -45,7 +45,6 @@ module Hyrax
 
     def update
       if @admin_set.update(admin_set_params)
-
         permission_template.update(permission_template_params)
         redirect_to hyrax.admin_admin_sets_path
       else
@@ -59,7 +58,9 @@ module Hyrax
         permission_template_holder = permission_template
         permission_template_holder.attributes = permission_template_params
         permission_template_holder.save! # to create permission template on create
-        redirect_to hyrax.admin_admin_sets_path
+        flash[:notice] = I18n.t('new_admin_set', scope: 'hyrax.admin.admin_sets.form.permission_update_notices')
+        setup_form
+        render :edit
       else
         setup_form
         render :new

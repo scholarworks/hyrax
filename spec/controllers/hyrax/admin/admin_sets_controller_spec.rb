@@ -69,7 +69,7 @@ describe Hyrax::Admin::AdminSetsController do
           post :create, params: { admin_set: { title: 'Test title',
                                                description: 'test description',
                                                workflow_name: 'default' } }
-          expect(response).to be_redirect
+          expect(response).to render_template 'edit'
         end
       end
 

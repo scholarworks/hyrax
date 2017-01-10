@@ -38,6 +38,11 @@ es:
             visibility:         "Lanzamiento y Visibilidad"
             workflow:           "Flujo de trabajo"
           cancel:               "Cancelar"
+          permission_update_notices: # TODO Translate to spanish
+            new_admin_set:      "The administrative set has been created. Use the additional tabs to define other aspects of the administrative set."
+            visibility:         "The administrative set's visibilty settings have been updated."
+            workflow:           "The administrative set's workflow has been updated."
+            participants:       "The administrative set's participant rights have been updated"
         form_participant_table:
           depositors:
             action:             "Acción"

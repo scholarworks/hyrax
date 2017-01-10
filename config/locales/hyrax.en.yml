@@ -16,6 +16,11 @@ en:
             visibility:         "Release and Visibility"
             workflow:           "Workflow"
           cancel:               "Cancel"
+          permission_update_notices:
+            new_admin_set:      "The administrative set has been created. Use the additional tabs to define other aspects of the administrative set."
+            visibility:         "The administrative set's visibilty settings have been updated."
+            workflow:           "The administrative set's workflow has been updated."
+            participants:       "The administrative set's participant rights have been updated"
         form_participants:
           add_group:            "Add group:"
           add_user:             "Add user:"
