@@ -19,13 +19,13 @@ module Hyrax
 
         def update_params
           params.require(:permission_template)
-                .permit(:release_date, :release_period, :release_varies, :release_embargo, :visibility, :workflow_name,
+                .permit(:release_date, :release_period, :release_varies, :release_embargo, :visibility, :workflow_id,
                         access_grants_attributes: [:access, :agent_id, :agent_type, :id])
         end
 
         def current_tab
           return 'participants' if params[:permission_template][:access_grants_attributes].present?
-          return 'workflow' if params[:permission_template][:workflow_name].present?
+          return 'workflow' if params[:permission_template][:workflow_id].present?
           'visibility'
         end
     end

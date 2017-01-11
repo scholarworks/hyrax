@@ -21,8 +21,8 @@ module Hyrax
         PermissionTemplateForm.new(@permission_template)
       end
 
-      def workflow_name
-        @permission_template.workflow_name
+      def workflow_id
+        @permission_template.workflow_id
       end
 
       class << self

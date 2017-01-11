@@ -122,7 +122,7 @@ module Hyrax
       end
 
       def permission_template_params
-        { "workflow_name" => params[:admin_set][:workflow_name] }
+        { "workflow_id" => params[:admin_set][:workflow_id] }
       end
   end
 end
